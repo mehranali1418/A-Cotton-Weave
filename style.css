@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+    ;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-end;
+    padding: 0px 90px;
+    padding-top: 170px;
+    gap: 70px;
+}
+
+#left{
+    height: 100%;
+    width: 45%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+#left h1{
+    font-size: 8.6vw;
+    font-weight: 500;
+    line-height: 8.8vw;
+}
+
+#bottom{
+    /* height: 40%; */
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+#color{
+    /* background-color: darkgoldenrod; */
+    width: fit-content;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid #000;
+}
+
+#color h5{
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+#color1{
+    width: 20px;
+    height: 20px;
+    background-color: sienna;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+#color2{
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+#left h2{
+    margin-top: 50px;
+    font-size: 2vw;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#left p{
+    font-size:1.2vw;
+    font-weight: 500;
+    width: 65%;
+    color: #444;
+    line-height:1.5vw ;
+}
+
+#right{
+    height: 90%;
+    width: 35%;
+    /* background-color: brown; */
+    position: relative;
+   
+}
+#right-top{
+    height: 80px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+#right-top h4{
+   font-size: 20px;
+   font-weight: 600;
+}
+
+#right-top h5{
+    font-size: 13px;
+}
+
+#right-top h5 i{
+    color: gold;
+}
+
+#image{
+    height: 88.6%;
+    width: 100%;
+    background-color: #444;
+    background-image: url(https://images.unsplash.com/photo-1602370463198-086436840055?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybCUyMGZhc2hpb258ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-position: 0 22%;
+}
+
+#black{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 190px;
+    width: 190px;
+    background-color: rgb(26, 26, 26);
+    color: #fff;
+    border-radius: 50%;
+    right: -18%;
+    top: 30%;
+}
+
+#black h5{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#rotated{
+    position: absolute;
+    left: -13%;
+    bottom: 2%;
+    /* background-color: red; */
+    rotate: -90deg;
+    transform-origin: 0 0;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+@media (max-width:600px) {
+    #main{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0 40px;
+        padding-top: 40px;
+        gap: 40px;
+    }
+
+    #left{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 0;
+        gap: 30px;
+    }
+    
+    #left h1{
+        font-size: 18vw;
+        font-weight: 500;
+        line-height: 18vw;
+    }
+    
+    #bottom{
+        /* height: 40%; */
+        width: 100%;
+        /* background-color: yellow; */
+    }
+    
+    #color{
+        /* background-color: darkgoldenrod; */
+        width: fit-content;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: 1px solid #000;
+    }
+    
+    #color h5{
+        font-size: 13px;
+        margin-right: 5px;
+        font-weight: 500;
+    }
+    
+    #color1{
+        width: 12px;
+        height: 12px;
+        background-color: sienna;
+        border-radius: 50%;
+        margin: 4px;
+    }
+    
+    #color2{
+        width: 12px;
+        height: 12px;
+        background-color: #000;
+        border-radius: 50%;
+    }
+    
+    #left h2{
+        margin-top: 20px;
+        font-size: 4vw;
+        margin-bottom: 8px;
+    }
+    
+    #left p{
+        font-size: 3vw;
+        font-weight: 500;
+        width: 85%;
+        color: #444;
+        line-height: 4vw;
+    }
+    
+    #right{
+        height: 50%;
+        width: 100%;
+        /* background-color: brown; */
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #right-top{
+        height: 60px;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 0px;
+    }
+    
+    #right-top h4{
+       font-size: 20px;
+       font-weight: 600;
+    }
+    
+    #right-top h5{
+        font-size: 14px;
+    }
+    
+    #right-top h5 i{
+        color: gold;
+    }
+    
+    #image{
+        height: 88.6%;
+        width: 100%;
+        background-color: #444;
+        background-image: url(https://images.unsplash.com/photo-1602370463198-086436840055?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybCUyMGZhc2hpb258ZW58MHx8MHx8fDA%3D);
+        background-size: cover;
+        background-position: 0 22%;
+    }
+    
+    #black{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+        background-color: rgb(26, 26, 26);
+        color: #fff;
+        border-radius: 50%;
+        right: -18%;
+        top: 30%;
+    }
+    
+    #black h5{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    #rotated{
+        position: absolute;
+        left: -8%;
+        bottom: 21%;
+        /* background-color: red; */
+        rotate: -90deg;
+        transform-origin: 0 0;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
